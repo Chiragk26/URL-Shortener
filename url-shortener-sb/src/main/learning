@@ -21,3 +21,5 @@ Define security rules for handling http requests.
 Configure JwtAuthenticationFilter in filter chain->Spring security recognizes JwtAuthenticationFilter as a filter that will be executed once per request,but doesn't automatically include in filter chain unless explicity added.
 Configure DaoAuthenticationFilter-> needed for the custom user we are loading in userDetailsService
 Bean for AuthenticationManager and PasswordEncoder.
+
+
