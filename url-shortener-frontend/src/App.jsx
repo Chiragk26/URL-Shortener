@@ -12,18 +12,30 @@ import DashboardLayout from './components/Dashboard/DashboardLayout';
 function App() {
 
   return (
-  <Router>
+<Router>
+  <div className="flex flex-col min-h-screen">
+    {/* Navbar always on top */}
     <Navbar />
-    <Toaster position='bottom-center'/>
-  <Routes>
-    <Route path='/' element={<LandingPage />}></Route>
-    <Route path='/about' element={<AboutPage />}></Route>
-    <Route path='/register' element={<RegisterPage />}></Route>
-    <Route path='/login' element={<LoginPage />}></Route>
-    <Route path='/dashboard' element={<DashboardLayout />}></Route>
-    </Routes>
-     <Footer />
-    </Router>
+
+    {/* Main content grows to fill remaining space */}
+    <main className="flex-1 overflow-auto">
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/register" element={<RegisterPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/dashboard" element={<DashboardLayout />} />
+      </Routes>
+    </main>
+
+    {/* Footer always at bottom */}
+    <Footer />
+  </div>
+
+  <Toaster position="bottom-center" />
+</Router>
+
+
    
   )
 }
