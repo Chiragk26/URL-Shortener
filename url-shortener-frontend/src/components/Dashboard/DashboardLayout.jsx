@@ -16,6 +16,9 @@ const DashboardLayout = () => {
   const { isLoading, data: myShortenUrls, refetch  } = useFetchMyShortUrls(token, onError);
   const { isLoading: loader, data: totalClicks } = useFetchTotalClicks(token, onError);
 
+
+  const navigate = useNavigate();
+
   function onError() {
     console.log("ERROR");
      navigate("/error");
@@ -23,8 +26,8 @@ const DashboardLayout = () => {
 
   return (
     <div className='lg:px-14 sm:px-10 px-4 min-h-[calc(100vh-64px)]'>
-      {loader ? (
-        <p>Loading...</p>
+      { loader ? (
+      <p>It's loading...</p>
       ) : (
         <div className="lg:w-[90%] w-full mx-auto py-16">
           <div className=" h-96 relative ">

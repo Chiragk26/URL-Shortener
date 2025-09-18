@@ -8,14 +8,14 @@ const Footer = () => {
         
         {/* Brand Section */}
         <div className="text-center lg:text-left">
-          <h2 className="text-3xl font-bold mb-2">Linklytics</h2>
+          <h2 className="text-3xl font-bold mb-2">YouURL</h2>
           <p className="text-gray-200 text-sm">
             Simplifying URL shortening for efficient sharing
           </p>
         </div>
 
         {/* Copyright */}
-        <p className="text-sm">&copy; {new Date().getFullYear()} Linklytics. All rights reserved.</p>
+        <p className="text-sm">&copy; {new Date().getFullYear()} YouURL. All rights reserved.</p>
 
         {/* Social Icons */}
         <div className="flex space-x-6">

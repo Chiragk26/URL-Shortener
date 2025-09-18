@@ -12,7 +12,7 @@ const LandingPage = () => {
   console.log("TOKEN FROM LANDING PAGE: " + token);
 
   const dashBoardNavigateHandler = () => {
-
+      
   };
   return (
     
@@ -29,42 +29,14 @@ const LandingPage = () => {
             transition={{ duration: 0.8 }}
             className="font-bold font-roboto text-slate-800 md:text-5xl sm:text-4xl text-3xl   md:leading-[55px] sm:leading-[45px] leading-10 lg:w-full md:w-[70%] w-full"
           >
-            Linklytics Simplifies URL Shortening For Efficient Sharing.
+            YouURL Simplifies URL Shortening For Efficient Sharing.
           </motion.h1>
           <p className="text-slate-700 text-sm my-5">
-            Linklytics streamlines the process of URL shortening, making sharing
+            YouURL streamlines the process of URL shortening, making sharing
             links effortless and efficient. With its user-friendly interface,
-            Linklytics allows you to generate concise, easy-to-share URLs in
-            seconds. Simplify your sharing experience with Linklytics today.
+            YouURL allows you to generate concise, easy-to-share URLs in
+            seconds. Simplify your sharing experience with YouURL today.
           </p>
-          <div className="flex items-center gap-3">
-            <motion.button
-              initial={{ opacity: 0, y: 80 }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-              }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              onClick={dashBoardNavigateHandler}
-              className="bg-custom-gradient  w-40 text-white rounded-md  py-2"
-            >
-              Manage Links
-            </motion.button>
-            <motion.button
-              initial={{ opacity: 0, y: 80 }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-              }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              onClick={dashBoardNavigateHandler}
-              className="border-btnColor border w-40 text-btnColor rounded-md  py-2 "
-            >
-              Create Short Link
-            </motion.button>
-          </div>
         </div>
         <div className="   flex-1 flex   justify-center w-full">
           <motion.img
