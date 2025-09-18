@@ -1,14 +1,15 @@
 import React, { useState } from 'react'
 import { useStoreContext } from '../../contextApi/ContextApi';
 import { useForm } from 'react-hook-form';
-// import { data } from 'autoprefixer';
 import TextField from '../TextField';
 import { Tooltip } from '@mui/material';
 import { RxCross2 } from 'react-icons/rx';
 import api from '../../api/api';
 import toast from 'react-hot-toast';
+import { useNavigate } from 'react-router-dom';
 
 const CreateNewShorten = ({ setOpen, refetch }) => {
+  const navigate = useNavigate();
     const { token } = useStoreContext();
     const [loading, setLoading] = useState(false);
 
@@ -48,7 +49,7 @@ const CreateNewShorten = ({ setOpen, refetch }) => {
           reset();
           setOpen(false);
     } catch (error) {
-        toast.error("Create ShortURL Failed");
+         navigate("/error");
     } finally {
         setLoading(false);
     }

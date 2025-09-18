@@ -31,7 +31,7 @@ const LoginPage = () => {
     
         } catch (error) {
             console.log(error);
-            toast.error("LogIn failed. Please try again.");
+             navigate("/error");
         } finally {
             setLoader(false);
         }

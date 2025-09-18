@@ -22,4 +22,5 @@ Configure JwtAuthenticationFilter in filter chain->Spring security recognizes Jw
 Configure DaoAuthenticationFilter-> needed for the custom user we are loading in userDetailsService
 Bean for AuthenticationManager and PasswordEncoder.
 
+8. study about context.api
 

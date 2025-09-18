@@ -23,7 +23,7 @@ const RegisterPage = () => {
             toast.success("Registered Successfully! Please login.");
         } catch (error) {
             console.log(error);
-            toast.error("Registration failed. Please try again.");
+            navigate("/error");
         } finally {
             setLoader(false);
         }

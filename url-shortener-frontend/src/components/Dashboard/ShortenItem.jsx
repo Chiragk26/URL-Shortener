@@ -72,9 +72,9 @@ const ShortenItem = ({ originalUrl, shortUrl, clickCount, createdDate }) => {
             <Link
               target="_blank"
               className="text-[17px] font-montserrat font-[600] text-linkColor"
-              to={import.meta.env.VITE_REACT_FRONT_END_URL + "/s/" + shortUrl}
+              to={import.meta.env.VITE_REACT_FRONT_END_URL + "/s/" + `${shortUrl}`}
             >
-              {subDomain + "/s/" + shortUrl}
+              {subDomain + "/s/" +  `${shortUrl}`}
             </Link>
             <FaExternalLinkAlt className="text-linkColor" />
           </div>
